@@ -54,6 +54,7 @@ promise
    *  then方法返回的也要是一个promise对象，这样才能支持链式调用
 
 * 具体代码：
+
 ``` javascript
 class MyPromise {
     constructor(fn) {
@@ -126,11 +127,15 @@ class MyPromise {
 
 ```
 ## 4.相关面试
+
 * 使用promise封装基本ajax
 	 * 思路简述：
+
 		一个返回promise对象的函数，函数内部使用js中XMLHttpRequest对象来实现。其中xhr中open来创建一个实际的ajax请求、
 		onloadend来监听ajax请求结束，将返回结果传入promise中的resolve方法，其他监听失败的函数将返回的错误信息传入promise的reject方法
+
 	 * 具体代码：
+
 	```javascript
 	function ajaxMise(url, method, data, async, timeout)
 	 { 
