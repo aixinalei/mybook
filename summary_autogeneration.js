@@ -38,9 +38,9 @@ function fileDisplay(filePath, Path) {
       }
       if (isDir && filename !== 'images' && filename !== 'img') {// 忽略images文件夾
         console.log('文件夾:', filename);
-        fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
         SUMMARY_MD_STR += `
 * ${filename}`;
+        fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
       }
     }
   });
