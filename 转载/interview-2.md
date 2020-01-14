@@ -293,11 +293,7 @@ HOC(Higher Order Componennt) 是在 React 机制下社区形成的一种组件�
 					return (
 						<div>
 							<Comp {...this.props} />
-							<div style={{
-								width: '100%',
-								height: '100%',
-								backgroundColor: 'rgba(0, 0, 0, .6)',
-							}} 
+							<div ></div>
 						</div>
 					)
 				}
@@ -771,8 +767,7 @@ SSR，俗称 **服务端渲染** (Server Side Render)，讲人话就是: 直接�
 		<Provider store={store}>
 			<StaticRouter
 				location={ctx.req.url}
-				context={{}}>
-				<App />
+		
 			</StaticRouter>
 		</Provider>
 	)

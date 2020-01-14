@@ -1,7 +1,6 @@
 var fs = require('fs');
 var path = require('path');
 
-console.log(__dirname);
 let SUMMARY_MD_STR = '';
 SUMMARY_MD_STR += `
 # Table of contents
@@ -31,13 +30,11 @@ function fileDisplay(filePath, Path) {
         // 忽略reademe 目录文件 及 目录自动生成脚本
         if (filename !== 'README.md' && filename !== 'SUMMARY.md' && filename !== 'summary_autogeneration.js') {
           // console.log(filedir);
-          console.log('文件', filename);
           SUMMARY_MD_STR += `
   * [${filename}](${Path}/${filename})`
         }
       }
       if (isDir && filename !== 'images' && filename !== 'img') {// 忽略images文件夾
-        console.log('文件夾:', filename);
         SUMMARY_MD_STR += `
 * ${filename}`;
         fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
