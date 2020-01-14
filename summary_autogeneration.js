@@ -31,7 +31,7 @@ function fileDisplay(filePath, Path) {
         if (filename !== 'README.md' && filename !== 'SUMMARY.md' && filename !== 'summary_autogeneration.js') {
           // console.log(filedir);
           SUMMARY_MD_STR += `
-  * [${filename}](${Path}/${filename})`
+  * [${filename.slice(0,filename.length-3)}](${Path}/${filename})`
         }
       }
       if (isDir && filename !== 'images' && filename !== 'img') {// 忽略images文件夾
