@@ -34,7 +34,7 @@ function fileDisplay(filePath, Path) {
   * [${filename.slice(0,filename.length-3)}](${Path}/${filename})`
         }
       }
-      if (isDir && filename !== 'images' && filename !== 'img') {// 忽略images文件夾
+      if (isDir && filename !== 'images' && filename !== 'img' && filename !== 'todo') {// 忽略images文件夾和未完工的文件
         SUMMARY_MD_STR += `
 * ${filename}`;
         fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
