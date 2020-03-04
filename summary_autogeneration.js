@@ -1,6 +1,20 @@
 var fs = require('fs');
 var path = require('path');
-
+let ignoreFileList = [
+  'README.md',
+  'SUMMARY.md',
+  'summary_autogeneration.js',
+  'yulib.config',
+  '.gitignore'
+]
+// 忽略得文件夹
+let ignoreFolderList = [
+  '.git',
+  'images',
+  'img',
+  'todo',
+  'yulib.resource',
+]
 let SUMMARY_MD_STR = '';
 SUMMARY_MD_STR += `
 # Table of contents
@@ -28,13 +42,13 @@ function fileDisplay(filePath, Path) {
       var isDir = stats.isDirectory();//是文件夹
       if (isFile) {
         // 忽略reademe 目录文件 及 目录自动生成脚本
-        if (filename !== 'README.md' && filename !== 'SUMMARY.md' && filename !== 'summary_autogeneration.js') {
+        if (!ignoreFileList.includes(filename)) {
           // console.log(filedir);
           SUMMARY_MD_STR += `
   * [${filename.slice(0,filename.length-3)}](${Path}/${filename})`
         }
       }
-      if (isDir && filename !== 'images' && filename !== 'img' && filename !== 'todo') {// 忽略images文件夾和未完工的文件
+      if (isDir && !ignoreFolderList.includes(filename)) {// 忽略images文件夾和未完工的文件
         SUMMARY_MD_STR += `
 * ${filename}`;
         fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件

@@ -9,6 +9,7 @@
   * [转发和重定向](http相关/转发和重定向.md)
 * js
   * [ajax请求中contentType和dataType](js/ajax请求中contentType和dataType.md)
+  * [js基础讲解this篇](js/js基础讲解this篇.md)
   * [js模块化](js/js模块化.md)
 * react
   * [React组件设计规则](react/React组件设计规则.md)
