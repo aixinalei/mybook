@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+// 忽略的文件
 let ignoreFileList = [
   'README.md',
   'SUMMARY.md',
@@ -7,7 +8,7 @@ let ignoreFileList = [
   'yulib.config',
   '.gitignore'
 ]
-// 忽略得文件夹
+// 忽略的文件夹
 let ignoreFolderList = [
   '.git',
   'images',
@@ -32,8 +33,6 @@ function fileDisplay(filePath, Path) {
   var files = fs.readdirSync(filePath);
   //遍历读取到的文件列表
   files.forEach(function (filename) {
-    // 忽略到.git 文件
-    if (filename !== '.git') {
       //获取当前文件的绝对路径
       var filedir = path.join(filePath, filename);
       //根据文件路径获取文件信息，返回一个fs.Stats对象
@@ -53,7 +52,6 @@ function fileDisplay(filePath, Path) {
 * ${filename}`;
         fileDisplay(filedir, Path + filename);//递归，如果是文件夹，就继续遍历该文件夹下面的文件
       }
-    }
   });
 }
 fileDisplay(__dirname, '');

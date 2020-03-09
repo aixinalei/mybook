@@ -8,8 +8,11 @@
   * [cookie和session](http相关/cookie和session.md)
   * [转发和重定向](http相关/转发和重定向.md)
 * js
+  * [1.js原型链详解](js/1.js原型链详解.md)
+  * [2.js基础讲解this篇](js/2.js基础讲解this篇.md)
+  * [3.call apply和bind](js/3.call apply和bind.md)
+  * [4.js中的继承](js/4.js中的继承.md)
   * [ajax请求中contentType和dataType](js/ajax请求中contentType和dataType.md)
-  * [js基础讲解this篇](js/js基础讲解this篇.md)
   * [js模块化](js/js模块化.md)
 * react
   * [React组件设计规则](react/React组件设计规则.md)
