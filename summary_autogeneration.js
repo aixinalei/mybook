@@ -6,6 +6,7 @@ let ignoreFileList = [
   'SUMMARY.md',
   'summary_autogeneration.js',
   'yulib.config',
+  'make_book.bat',
   '.gitignore'
 ]
 // 忽略的文件夹
@@ -14,6 +15,7 @@ let ignoreFolderList = [
   'images',
   'img',
   'todo',
+  'selef', // 自己的文件夹不对外公布
   'yulib.resource',
 ]
 let SUMMARY_MD_STR = '';
