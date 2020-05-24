@@ -1,6 +1,7 @@
 js模块化
 ==
 前端模块化分几种:CommonJS、ES6、AMD、CMD
+
 1. CommonJS
 CommonJS 采用的是运行时同步加载，模块输出的是一个值的拷贝。
 针对为什么CommonJS是运行时同步加载：阮一峰老师有着很好的解释

@@ -67,6 +67,7 @@ Event Loop执行顺序如下：
     *   I/O
     *   UI rendering
 举个经典例子
+
 ```
 console.log('script start') 
 
@@ -96,6 +97,7 @@ new Promise(resolve => {
 
 console.log('script end') 
 ```
+
 这里首先要明白async和await写法对于promise的关系 async仅相当于定义时宣布此函数里有异步操作。await相当于暂停，await后面的代码相当于放到promise的then当中。await 里函数的代码相当于放到创建promise的new函数之中
 接下来解析上面代码
 首先执行第一轮宏任务
