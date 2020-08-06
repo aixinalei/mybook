@@ -2,6 +2,7 @@
 # Table of contents
 
 * [前言](README.md)
+  * [book.](/book.pdf)
 * es6
   * [promise](es6/promise.md)
   * [箭头函数](es6/箭头函数.md)
@@ -20,15 +21,15 @@
   * [8-js事件循环](js/8-js事件循环.md)
   * [9-js模块化](js/9-js模块化.md)
 * react
+  * [React组件设计规则](react/React组件设计规则.md)
   * [mvc mvvm](react/mvc mvvm.md)
   * [react diff](react/react diff.md)
-  * [React组件设计规则](react/React组件设计规则.md)
+  * [react懒加载](react/react懒加载.md)
   * [redux](react/redux.md)
   * [setState源码分析](react/setState源码分析.md)
 * 其他
   * [gitbook简易配置教程](其他/gitbook简易配置教程.md)
   * [gitbook转pdf电子书](其他/gitbook转pdf电子书.md)
-* 算法
 * 转载
   * [interview-1](转载/interview-1.md)
   * [interview-2](转载/interview-2.md)
