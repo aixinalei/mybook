@@ -56,7 +56,7 @@ Event Loop执行顺序如下：
 *   微任务包括：
 
     *   process.nextTick（node独有）
-    *   promise
+    *   promise.then 或者 promise.resolve 里的内容
     *   MutationObserver
 *   宏任务：
 
@@ -66,6 +66,7 @@ Event Loop执行顺序如下：
     *   setImmediate
     *   I/O
     *   UI rendering
+    *   new Promise(fn) 中的fn
 举个经典例子
 
 ```
