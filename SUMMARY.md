@@ -2,6 +2,7 @@
 # Table of contents
 
 * [前言](README.md)
+  * [.DS_St](/.DS_Store)
   * [book.](/book.pdf)
 * es6
   * [promise](es6/promise.md)
@@ -9,9 +10,12 @@
 * http相关
   * [ajax请求中contentType和dataType](http相关/ajax请求中contentType和dataType.md)
   * [cookie、session和token](http相关/cookie、session和token.md)
+  * [http协议介绍](http相关/http协议介绍.md)
+  * [http缓存](http相关/http缓存.md)
   * [转发和重定向](http相关/转发和重定向.md)
 * js
   * [1-js深浅复制](js/1-js深浅复制.md)
+  * [10-节流防抖](js/10-节流防抖.md)
   * [2-js函数值传递](js/2-js函数值传递.md)
   * [3-js原型链详解](js/3-js原型链详解.md)
   * [4-js基础讲解this篇](js/4-js基础讲解this篇.md)
@@ -24,12 +28,21 @@
   * [React组件设计规则](react/React组件设计规则.md)
   * [mvc mvvm](react/mvc mvvm.md)
   * [react diff](react/react diff.md)
+  * [react fiber](react/react fiber.md)
+  * [react-router](react/react-router.md)
   * [react懒加载](react/react懒加载.md)
   * [redux](react/redux.md)
   * [setState源码分析](react/setState源码分析.md)
+  * [webpack+react 从0项目构建](react/webpack+react 从0项目构建.md)
+* ts
+  * [Typescript编程书籍导读](ts/Typescript编程书籍导读.md)
+  * [体操基础](ts/体操基础.md)
 * 其他
   * [gitbook简易配置教程](其他/gitbook简易配置教程.md)
   * [gitbook转pdf电子书](其他/gitbook转pdf电子书.md)
+* 微前端
+  * [qiankun](微前端/qiankun.md)
+  * [single-spa源码分析](微前端/single-spa源码分析.md)
 * 转载
   * [interview-1](转载/interview-1.md)
   * [interview-2](转载/interview-2.md)
@@ -37,4 +50,5 @@
 * 项目经验
   * [electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表](项目经验/electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表.md)
   * [overflow-yautohiddenscroll和overflow-xvisible组合渲染异常](项目经验/overflow-yautohiddenscroll和overflow-xvisible组合渲染异常.md)
+  * [团队管理](项目经验/团队管理.md)
   * [基于node实现简单server](项目经验/基于node实现简单server.md)
