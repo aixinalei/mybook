@@ -29,7 +29,7 @@ react diff算法网上讲解的有很多，大多数都是基于<<深入React技
 
 ### component diff 
 
-* 如果是同一类型（个人理解为同一class或者function）且key值相同的组件，按照原策略继续比较 Virtual DOM 树即可（这里的比较虚拟dom要更新属性事件，递归更新子组件）。
+* 如果是同一类型（个人理解为同一class或者function或者相同标签）且key值相同的组件，按照原策略继续比较 Virtual DOM 树即可（这里的比较虚拟dom要更新属性事件，递归更新子组件）。
 * 如果不是，则将该组件判断为 dirty component，从而**替换**整个组件下的所有子节点。 
 * 对于同一类型的组件，有可能其 Virtual DOM 没有任何变化，如果能够确切知道这点，那 么就可以节省大量的 diff 运算时间。因此，React 允许用户通过 shouldComponentUpdate() 来判断该组件是否需要进行 diff 算法分析。
 
