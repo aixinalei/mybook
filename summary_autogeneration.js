@@ -7,7 +7,8 @@ let ignoreFileList = [
   'summary_autogeneration.js',
   'yulib.config',
   'make_book.bat',
-  '.gitignore'
+  '.gitignore',
+  '.DS_Store'
 ]
 // 忽略的文件夹
 let ignoreFolderList = [

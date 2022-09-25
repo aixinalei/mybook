@@ -26,7 +26,7 @@ HTML Entry 我认为是乾坤最让人省事的一点。
 
 #### 清除副作用
 清除副作用的话本质上还是重写了window上的事件监听 setTimeoout方法
-
+另外2.0 之后主要是也对创建link script 等标签注入进行了监听。
 
 #### 为什么不用iframe
 1. Dialog如何遮罩整个屏幕

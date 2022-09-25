@@ -2,8 +2,6 @@
 # Table of contents
 
 * [前言](README.md)
-  * [.DS_St](/.DS_Store)
-  * [book.](/book.pdf)
 * es6
   * [promise](es6/promise.md)
   * [箭头函数](es6/箭头函数.md)
@@ -19,21 +17,21 @@
   * [2-js函数值传递](js/2-js函数值传递.md)
   * [3-js原型链详解](js/3-js原型链详解.md)
   * [4-js基础讲解this篇](js/4-js基础讲解this篇.md)
-  * [5-call apply和bind](js/5-call apply和bind.md)
+  * [5-call、apply和bind](js/5-call、apply和bind.md)
   * [6-js中的继承](js/6-js中的继承.md)
   * [7-闭包与立即执行函数](js/7-闭包与立即执行函数.md)
   * [8-js事件循环](js/8-js事件循环.md)
   * [9-js模块化](js/9-js模块化.md)
 * react
-  * [React组件设计规则](react/React组件设计规则.md)
-  * [mvc mvvm](react/mvc mvvm.md)
-  * [react diff](react/react diff.md)
-  * [react fiber](react/react fiber.md)
+  * [mvc与mvvm](react/mvc与mvvm.md)
+  * [React-diff](react/React-diff.md)
+  * [React-fiber](react/React-fiber.md)
   * [react-router](react/react-router.md)
   * [react懒加载](react/react懒加载.md)
+  * [React组件设计规则](react/React组件设计规则.md)
   * [redux](react/redux.md)
   * [setState源码分析](react/setState源码分析.md)
-  * [webpack+react 从0项目构建](react/webpack+react 从0项目构建.md)
+  * [webpack+react从0项目构建](react/webpack+react从0项目构建.md)
 * ts
   * [Typescript编程书籍导读](ts/Typescript编程书籍导读.md)
   * [体操基础](ts/体操基础.md)
