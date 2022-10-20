@@ -317,6 +317,16 @@ let foo = function() { console.log(1) }
 - 绑定this: `apply`
 - 返回新对象(如果构造函数有自己 retrun 时，则返回该值)
 
+```
+function _new(fn,...args) {
+	// 也可以换成 newObj = {} newObj._proto_ = fn.prototype 实现继承
+    const newObj = Object.create(fn.prototype);
+    const value = fn.apply(newObj,args);
+    // 如果函数返回 非空并是对象 返回 value 否则 返回 newObj
+    return value instanceof Object ? value : newObj;
+}
+```
+
 ### 9. instanceof原理
 
 能在实例的 **原型对象链** 中找到该构造函数的`prototype`属性所指向的 **原型对象**，就返回`true`。即:

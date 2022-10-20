@@ -38,15 +38,20 @@
 * 其他
   * [gitbook简易配置教程](其他/gitbook简易配置教程.md)
   * [gitbook转pdf电子书](其他/gitbook转pdf电子书.md)
+* 常见的笔试题
 * 微前端
+  * [pnpm](微前端/pnpm.md)
   * [qiankun](微前端/qiankun.md)
   * [single-spa源码分析](微前端/single-spa源码分析.md)
 * 转载
   * [interview-1](转载/interview-1.md)
   * [interview-2](转载/interview-2.md)
   * [interview-3](转载/interview-3.md)
+  * [经验好文](转载/经验好文.md)
 * 项目经验
   * [electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表](项目经验/electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表.md)
   * [overflow-yautohiddenscroll和overflow-xvisible组合渲染异常](项目经验/overflow-yautohiddenscroll和overflow-xvisible组合渲染异常.md)
+  * [前端性能优化思路](项目经验/前端性能优化思路.md)
+  * [前端登录流程](项目经验/前端登录流程.md)
   * [团队管理](项目经验/团队管理.md)
   * [基于node实现简单server](项目经验/基于node实现简单server.md)
