@@ -258,7 +258,12 @@ class MyPromise {
 	}
 	
 	```
-
+* 实现一个异步并发限制
+  ```
+  
+  ```
+* 
+ 
 ### 参考文献
 [阮一峰老师es6文档](http://es6.ruanyifeng.com/#docs/promise)
 [Promise详解](https://juejin.im/post/5b2a422bf265da59810b677c#heading-5)

@@ -1,6 +1,8 @@
 js模块化
 ==
-前端模块化分几种:CommonJS、ES6、AMD、CMD
+前端模块化分几种:CommonJS、ES6、AMD、CMD、UMD
+
+> BTW,组件库打包比如antd 打包出来的文件目录比如lib es dist 分别是common.js esmodule umd 模块
 
 1. CommonJS
 CommonJS 采用的是运行时同步加载，模块输出的是一个值的拷贝。
@@ -34,6 +36,24 @@ ES6模块化采用的是编译时输出接口，提供的是值的引用
 4. CMD
 推崇**依赖就近**，只有真正需要才加载，只有使用的时候才定义依赖。没什么用了解即可
 
+5. UMD
+   推出时间大约在 2013 年。UMD 主要是解决跨平台模块化方案的问题，它合并了 CommonJS 和 AMD 规范，能够兼容各种情况的环境，同时运行在客户端和服务器端，因此被称为是通用的模块定义。当使用 Rollup/Webpack 之类的打包器时，UMD 通常用作备用模块
+
+	```javascript
+	(function (root, factory) {
+	if (typeof define === "function" && define.amd) {
+		define(["dependency"], factory);
+	} else if (typeof exports === "object") {
+		module.exports = factory(require("dependency"));
+	} else {
+		root.returnExports = factory(root.dependency);
+	}
+	})(this, function (dependency) {
+	return {}; //返回值即为定义的模块
+	});
+
+	```
+	> 注：所以说single-spa 子模块可以设置为amd也是可以的。核心是要的导入加载。
 
 参考文章
 [阮一峰-ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/module-loader#ES6-%E6%A8%A1%E5%9D%97%E4%B8%8E-CommonJS-%E6%A8%A1%E5%9D%97%E7%9A%84%E5%B7%AE%E5%BC%82)

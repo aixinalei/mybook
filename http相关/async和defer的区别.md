@@ -1,0 +1,15 @@
+async和defer的异同主要是因为他们的加载和执行时机。区别如下:
+
+普通的script(不使用async和defer)加载完会立即执行,会阻塞script标签下面的资源加载和dom的解析
+使用async后,script加载完后会立即执行。(网络)资源的加载过程是异步的,不会阻塞后续资源的加载dom和解析。
+使用defer后,script异步加载,html解析之后执行、DomContentLoaded之前执行。
+async和defer的相同点
+都是异步加载script,加载的过程都不会阻塞html的解析。
+
+不同点
+1.async和defer的执行时机不同,async是在加载完后立即执行,执行的过程仍会阻塞后续html的解析。defer是在html解析完,DomCOntentLoaded之前执行。
+2.asyny不能保证script标签的执行顺序(谁先加载完谁先执行),async在html解析完之后按顺序执行。
+
+总结
+通常情况下defer的使用频率较高,它能保证script之间的变量依赖。
+需要注意的是:async script的资源请求时异步的,但script的执行仍然会阻塞后续渲染(单线程),defer是在html渲染完之后执行的所以不会阻塞后续html的解析。
