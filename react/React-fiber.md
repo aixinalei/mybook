@@ -54,8 +54,15 @@ key 是给 reconciler 在协调过程中，决定该 fiber 是否要复用
 React Fiber树的结构
 ![React Fiber的结构](img/fiber-linked-node.png)
 
+#### react 两颗树
+current VS workInProgress
+current tree: 反映当前屏幕上的UI HostRoot.current；
+workInProgress tree: 反映下一次屏幕上的UI  current.alternate；
+两颗树上对应的Fiber Node 通过 alternate 字段建立联系
+
 #### 参考文章
 
 [Why Fiber](https://i.overio.space/fiber/why-fiber/)
 [whats-fiber](https://i.overio.space/fiber/whats-fiber/)
 [完全理解React Fiber](http://www.ayqy.net/blog/dive-into-react-fiber/)
+[react fiber详解](https://react.iamkasong.com/process/fiber-mental.html)

@@ -58,8 +58,6 @@ Promise 常见手写
                   run(resolve, reject)
               }
           }).catch(reject);
-        
-        
       }
     
       return (...params) => new Promise((resolve, reject) => {

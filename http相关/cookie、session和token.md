@@ -25,6 +25,7 @@ token是一种身份验证的机制，初始时客户端携带用户信息访问
 通过上面的这一套流程我们能发现使用token还是很麻烦的。需要大量的前端配合，所以这种方案真的很适合前后端分离的项目（由于前后端分离，那么前端大概率是SPA单页面应用，这种应用基本都会在ajax中加过滤，方便对统一的ajax返回的错误信息进行统一处理等）
 对于服务端来说，有统一的标准来实现token，叫JWT（JSON WEB TOKEN）有兴趣深入了解的话可以看下面的参考文章。
 
+
 ### token的优势
 1. 方便横向拓展 比方说我们有不用语言构建的服务，比方说java node php等等。那么我们如何做到统一登录呢，这个时候就需要统一的验证机制。
 2. 由于不再依赖cookie，所以不再有CSRF问题
@@ -44,3 +45,4 @@ token是一种身份验证的机制，初始时客户端携带用户信息访问
 [彻底理解cookie，session，token](https://zhuanlan.zhihu.com/p/63061864)
 [Jwt的使用场景](https://blog.csdn.net/wzmde007/article/details/94409848)
 [10分钟了解JSON Web令牌（JWT）](https://baijiahao.baidu.com/s?id=1608021814182894637&wfr=spider&for=pc)
+[后端可以直接从cookie里取到token，为什么前端还要token设置到Authorization？](https://www.zhihu.com/question/558219586/answer/2710675882)

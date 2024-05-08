@@ -41,6 +41,31 @@ b = {
 b:'b'
 }
 console.log(a); // {a:'a'}
+
+// eg6 es6 扩展运算符 深浅拷贝的影响
+let obj = { a: 1, b: { c: 2 } };
+
+let obj2 = { ...obj };
+
+obj2.a = 3;
+obj2.b.c = 4;
+
+console.log(obj); // {a:1, b: { c: 4 }}
+console.log(obj2); // {a: 3, b: { c: 4 }}
+
+// eg7 数组的slice 和concat
+let obj = ['iyongbao', score: { vue: 98 }]
+
+let obj2 = obj.slice();
+let obj3 = obj.concat();
+
+obj[0] = "zhangsan";
+obj[1].vue = 60;
+
+console.log(obj); // {name: "zhangsan", score: { vue: 60 }}
+console.log(obj2); // {name: "iyongbao", score: { vue: 60 }}
+console.log(obj3); // {name: "iyongbao", score: { vue: 60 }}
+
 ```
 想要理解上面例子发生的原因就要从数据类型和堆栈内存开始说起
 ### 基本数据类型于引用数据类型
@@ -62,6 +87,23 @@ a是一个对象，是引用数据类型，所以当b复制的时候是复制了
 例五：
 这个例子看似和上面的很像但实际有很大不同，b = {b:'b'}这个操作实际上是新建了一个对象
 也就是说在堆内存中新建了一个地方，来存放{b:'b'}同时将栈内存中b原来存储的指向a的指针指向了这个对象，多以a并未发生任何改变
+
+### 如何手写一个深拷贝
+```
+function deepClone (obj) {
+    if (typeof obj !== 'object' || obj == null) {
+        return obj;
+    }
+    
+    let deepCloneObj = Array.isArray(obj) ? [] : {}
+    
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            deepCloneObj[key] = deepClone(obj[key]);
+        }
+    }
+}
+```
 #### 参考文献
 https://segmentfault.com/a/1190000008838101（重点看这篇，写的很好！）
 http://blog.csdn.net/flyingpig2016/article/details/52895620
