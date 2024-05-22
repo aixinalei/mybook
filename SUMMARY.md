@@ -7,6 +7,7 @@
   * [箭头函数](es6/箭头函数.md)
 * http相关
   * [ajax请求中contentType和dataType](http相关/ajax请求中contentType和dataType.md)
+  * [async和defer的区别](http相关/async和defer的区别.md)
   * [cookie、session和token](http相关/cookie、session和token.md)
   * [http协议介绍](http相关/http协议介绍.md)
   * [http缓存](http相关/http缓存.md)
@@ -14,6 +15,7 @@
 * js
   * [1-js深浅复制](js/1-js深浅复制.md)
   * [10-节流防抖](js/10-节流防抖.md)
+  * [11-Promise常见手写](js/11-Promise常见手写.md)
   * [2-js函数值传递](js/2-js函数值传递.md)
   * [3-js原型链详解](js/3-js原型链详解.md)
   * [4-js基础讲解this篇](js/4-js基础讲解this篇.md)
@@ -23,12 +25,12 @@
   * [8-js事件循环](js/8-js事件循环.md)
   * [9-js模块化](js/9-js模块化.md)
 * react
-  * [mvc与mvvm](react/mvc与mvvm.md)
   * [React-diff](react/React-diff.md)
   * [React-fiber](react/React-fiber.md)
+  * [React组件设计规则](react/React组件设计规则.md)
+  * [mvc与mvvm](react/mvc与mvvm.md)
   * [react-router](react/react-router.md)
   * [react懒加载](react/react懒加载.md)
-  * [React组件设计规则](react/React组件设计规则.md)
   * [redux](react/redux.md)
   * [setState源码分析](react/setState源码分析.md)
   * [webpack+react从0项目构建](react/webpack+react从0项目构建.md)
@@ -38,20 +40,33 @@
 * 其他
   * [gitbook简易配置教程](其他/gitbook简易配置教程.md)
   * [gitbook转pdf电子书](其他/gitbook转pdf电子书.md)
-* 常见的笔试题
 * 微前端
   * [pnpm](微前端/pnpm.md)
   * [qiankun](微前端/qiankun.md)
   * [single-spa源码分析](微前端/single-spa源码分析.md)
+  * [几种微前端架构的选型](微前端/几种微前端架构的选型.md)
 * 转载
   * [interview-1](转载/interview-1.md)
   * [interview-2](转载/interview-2.md)
   * [interview-3](转载/interview-3.md)
   * [经验好文](转载/经验好文.md)
 * 项目经验
+  * [23年总结](项目经验/23年总结.md)
   * [electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表](项目经验/electron-builder构建的安装包，安装时通过nsis脚本自动导入注册表.md)
+* howToDraw
+  * [demo1.j](项目经验howToDraw/demo1.jpeg)
+  * [demo2.j](项目经验howToDraw/demo2.jpeg)
+  * [demo3.j](项目经验howToDraw/demo3.jpeg)
+  * [demo4.j](项目经验howToDraw/demo4.jpeg)
+  * [demo5.j](项目经验howToDraw/demo5.jpeg)
   * [overflow-yautohiddenscroll和overflow-xvisible组合渲染异常](项目经验/overflow-yautohiddenscroll和overflow-xvisible组合渲染异常.md)
   * [前端性能优化思路](项目经验/前端性能优化思路.md)
+  * [前端性能监控工具](项目经验/前端性能监控工具.md)
   * [前端登录流程](项目经验/前端登录流程.md)
+  * [前端监控原理](项目经验/前端监控原理.md)
   * [团队管理](项目经验/团队管理.md)
   * [基于node实现简单server](项目经验/基于node实现简单server.md)
+  * [如何对业务进行深挖](项目经验/如何对业务进行深挖.md)
+  * [如何画图](项目经验/如何画图.md)
+  * [如何记录](项目经验/如何记录.md)
+  * [组件库](项目经验/组件库.md)
