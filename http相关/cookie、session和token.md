@@ -3,6 +3,16 @@ Cookie、Session与Token
 ## Cookie
 Cookie是一个http请求首部，当服务端响应头上标记着setCookie时，可以设置此cookie到当前域名下。浏览器端会将此cookie以kv的形式存储到本地文件中
 
+目前cookie 还支持很多属性设置
+* Secure：安全 只支持https
+* SameSite：指定当您通过网站内的链接移动到另一个站点时是否从目标站点发送 Cookie，有以下三个值
+    * Strict：如果您单击链接并转到另一个站点，则不会发送来自该站点的 cookie。
+    * Lax：仅针对 GET 等安全方法发送 Cookie。如果 POST 则不发送
+    * None：在任何情况下都发送 cookie
+* HttpOnly： 只有http请求时可以操作 禁止js操作cookie
+
+通过正确的配置可以提高csrf安全；
+
 ## Session
 session实际上是一种概念，表示每次会话服务器存储的用户信息
 

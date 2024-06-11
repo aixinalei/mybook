@@ -613,6 +613,7 @@ React 中通常使用 **类定义** 或者 **函数定义** 创建组件:
 		- DOM更新同步钩子。用法与`useEffect`类似，只是区别于执行时间点的不同。
 		- `useEffect`属于异步执行，并不会等待 DOM 真正渲染后执行，而`useLayoutEffect`则会真正渲染后才触发；
 		- 可以获取更新后的 state；
+	- `useImperativeHandle`: 配合useRef 完成父组件对子组件的调用
 	
 - **自定义钩子**(`useXxxxx`): 基于 Hooks 可以引用其它 Hooks 这个特性，我们可以编写自定义钩子，如上面的`useMounted`。又例如，我们需要每个页面自定义标题:
 

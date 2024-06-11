@@ -51,13 +51,12 @@ Promise 常见手写
       
       function run() {
           const [runTask,resolve, reject, ...params] = pendingList.shift();
-          runTask(...params).then((res)=>{
-              resolve(res)
+          runTask(...params).then(resolve).catch(reject).finnal(()=>{
               currentRunFnNum -= 1;
               if(pendingList.length >0) {
-                  run(resolve, reject)
+                  run(t)
               }
-          }).catch(reject);
+          });
       }
     
       return (...params) => new Promise((resolve, reject) => {
