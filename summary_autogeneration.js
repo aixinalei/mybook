@@ -18,6 +18,7 @@ let ignoreFolderList = [
   'todo',
   'selef', // 自己的文件夹不对外公布
   'yulib.resource',
+  'howToDraw'
 ]
 let SUMMARY_MD_STR = '';
 SUMMARY_MD_STR += `
