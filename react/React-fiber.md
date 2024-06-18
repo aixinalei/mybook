@@ -60,6 +60,14 @@ current tree: 反映当前屏幕上的UI HostRoot.current；
 workInProgress tree: 反映下一次屏幕上的UI  current.alternate；
 两颗树上对应的Fiber Node 通过 alternate 字段建立联系
 
+看了react源码以及面试得一些感受
+1. 实际上对于fibber 而言，fibber得数据结构其实就是很好得面试题，你能很好得说出fibber得结构 表明你对fibber就有一定得理解
+2. 可以问不同模式下 fibber是如何处理的。如果能答出那么大概率真的理解fibber
+3. 为什么fibber中 setState有时候是同步的有时候是异步的。原理是什么
+   这个原因是这样 首先fibber 的执行也就是任务调度 大概等同于一直执行一个requestIdlCallback. 回调的内容就是判断当前是否有wipFibber节点。 如果有的话，就执行调和逻辑
+   setState的逻辑是向当前workFibberNode的执行队列中放入多个action更新值。如果是同步的那么执行顺序是先 放多个更新值，交给fibber调度 fibber交给调和 批量更新。
+   如果中间有异步的action 那么就是放入更新值，交给fibber调度更新，浏览器下一个事件循环执行setState 此时继续交给fibber调度和事件更新。
+
 #### 参考文章
 
 [Why Fiber](https://i.overio.space/fiber/why-fiber/)
